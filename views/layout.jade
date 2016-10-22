@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/layout.css')
+    block head
+  body
+    .menu_icon_wrapper
+        a.logo_icon(href="/")
+        .menu_icon
+            .bars
+                .bar.bar1
+                .bar.bar2
+                .bar.bar3
+        .calculator
+    .sections_wrapper.not_transformed
+        section.menu
+            .menu_item
+                .block_caption_centerd.menu_item--header Партнеры
+                a(href="/partneri").link_wrapper 
+            .menu_item
+                .block_caption_centerd.menu_item--header Сотрудничество
+                a(href="/sotrudnichestvo").link_wrapper
+            .menu_item
+                .block_caption_centerd.menu_item--header Проекты
+                a(href="/proekti").link_wrapper
+            .menu_item
+                .block_caption_centerd.menu_item--header Контакты
+                a(href="/kontakti").link_wrapper
+        section.left_side
+            block left_side
+        section.right_side
+            block right_side
+    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="/javascripts/layout.js")
+    block js

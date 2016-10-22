@@ -1,0 +1,21 @@
+extends layout
+
+block head
+    link(rel="stylesheet", href="/stylesheets/main.css")
+    
+block left_side
+    video(src="../images/video/video-0-02-05-04c12554357cb257ebb05fdeca79c4b339887786704a228456e621d42fd4d585-V.mp4" autoplay muted).video_main
+    
+block right_side
+    .right_side--item
+        a.link_wrapper(href="/ulichnie_displei").ulichnie
+        .block_caption_centerd Уличные дисплеи
+    .right_side--item
+        a.link_wrapper(href="/interiernie_displei").interiernie
+        .block_caption_centerd Интерьерные дисплеи
+    .right_side--item
+        a.link_wrapper(href="/media_fasadi").media_fasadi
+        .block_caption_centerd Медиа фасады
+        
+block js
+    script(src="/javascripts/index.js")
