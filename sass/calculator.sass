@@ -10,10 +10,10 @@
 .calculator_section
     list-style-type: decimal
     font-size: 13px
-    height: 100px
+    min-height: 100px
     padding-left: 25px
     float: left
-    margin-bottom: 30px
+    padding-bottom: 30px
     
 .calculator_section_button
     list-style-type: none
@@ -21,6 +21,7 @@
     padding-left: 25px
     width: 100%
     height: 10%
+    box-sizing: border-box
     
 .calculator_label
     margin-bottom: 25px
@@ -51,6 +52,9 @@
     border: solid 1px #ccc
     cursor: pointer
     color: #ccc
+    
+.units
+    display: inline-block
 
 .step:after
     content: ' мм'
@@ -100,19 +104,20 @@
     height: 25%
     opacity: 0
     transition: 0.4s
-    padding: 20px
+    padding: 25px
     box-sizing: border-box
 
 .chosen_display
     font-size: 20px
     font-family: proxima-nova-bold
     display: inline-block
-    width: 60%
+    width: 50%
     vertical-align: top
     
 .price_wrapper
     display: inline-block
     width: 40%
+    margin-left: 10%
     font-family: proxima-nova-light
     
 .price_label
@@ -138,3 +143,16 @@
     float: left
     margin-left: 5px
     font-family: proxima-nova-bold
+    
+@media(max-width:600px)
+    .units
+        display: block
+        margin-top: 20px
+    .calculator_section_button
+        text-align: center
+        padding: 0
+    .clear
+        width: 90%
+    .count
+        margin: 20px 0
+        width: 90%

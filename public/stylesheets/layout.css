@@ -550,4 +550,29 @@ body {
   font-family: proxima-nova-extra-bold;
   text-align: center; }
 
+@media(max-width: 1024px) {
+  body {
+    overflow: visible; }
+
+  .left_side, .right_side, .right_side--item, .menu_icon_wrapper {
+    width: 100%; }
+
+  .sections_wrapper {
+    width: 100%; }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s; }
+
+  .mobile_menu_open {
+    opacity: 1;
+    z-index: 1000; }
+
+  .menu_item--header {
+    font-size: 18px; } }
+
 /*# sourceMappingURL=layout.css.map */
