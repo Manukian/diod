@@ -1,0 +1,49 @@
+extends layout
+
+block head
+    link(rel="stylesheet", href="/stylesheets/calculator.css")
+    
+block left_side
+    h1.page_header Калькулятор
+
+block right_side
+    .calculator_wrapper
+        li.calculator_section
+            .calculator_label Введите необходимые длину и ширину
+            input.size.display_width(placeholder="длина")
+            .multiply X
+            input.size.display_height(placeholder="ширина")
+            .unit.selectable.sm.square_selected см
+            .unit.selectable.mm мм
+        li.calculator_section
+            .calculator_label Выберите цвет свечения
+            .shine_color.selectable.square_selected.red_color крас
+            .shine_color.selectable.another_color друг
+            .shine_color.selectable.video_display цветн
+        li.calculator_section.steps
+            .calculator_label Шаг (расстояние между светодиодами)
+            .step.selectable 6
+            .step.selectable 6.67
+            .step.selectable 8
+            .step.selectable.video_available.square_selected 10
+            .step.selectable 13
+            .step.selectable 16
+            .step.selectable 20
+        li.calculator_section.video_remove
+            .calculator_label Опция для одноцветного
+            .video_support.square_selected Поддержка видео
+    .calculator_section_button
+        button.clear Cброс
+        button.count Подсчитать
+    .summary
+        .chosen_display
+        .price_wrapper
+            .price_label Цена:  
+            .price
+            .currensy p.
+            .price_label Спец. цена:  
+            .special_price
+            .currensy p.
+        
+block js
+    script(src="/javascripts/calculator.js")

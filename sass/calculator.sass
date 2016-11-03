@@ -1,0 +1,140 @@
+.right_side
+    background-color: white
+
+.calculator_wrapper
+    height: 65%
+    margin: 0 auto
+    padding: 50px 0 0
+    box-sizing: border-box
+
+.calculator_section
+    list-style-type: decimal
+    font-size: 13px
+    height: 100px
+    padding-left: 25px
+    float: left
+    margin-bottom: 30px
+    
+.calculator_section_button
+    list-style-type: none
+    font-size: 13px
+    padding-left: 25px
+    width: 100%
+    height: 10%
+    
+.calculator_label
+    margin-bottom: 25px
+    
+.size
+    padding: 10px 18px
+    width: 180px
+    box-sizing: border-box
+    display: inline-block
+    background-color: transparent
+    border: solid 1px #ccc
+    vertical-align: middle
+    &:first-of-type
+        margin-left: 15px
+    &:focus
+        outline: none
+        border: solid 1px blue
+    
+.multiply
+    display: inline-block
+    margin: 0 20px
+    
+.unit,.shine_color,.step
+    padding: 11.5px
+    display: inline-block
+    margin-left: 15px
+    vertical-align: middle
+    border: solid 1px #ccc
+    cursor: pointer
+    color: #ccc
+
+.step:after
+    content: ' мм'
+    
+.steps .step
+    display: none
+
+.steps .video_available
+    display: inline-block
+    
+.video_support
+    display: inline-block
+    padding: 10px 18px
+    box-sizing: border-box
+    border: solid 1px #ccc
+    margin-left: 15px
+    color: #ccc
+    cursor: pointer
+    
+.square_selected
+    border: solid 1px #0069ff
+    
+.count
+    display: inline-block
+    padding: 10px 18px
+    box-sizing: border-box
+    border-radius: 5px
+    border: none
+    background-color: #0CB863
+    color: white
+    margin-left: 5%
+    width: 65%
+    
+.clear
+    display: inline-block
+    padding: 10px 18px
+    box-sizing: border-box
+    border-radius: 5px
+    width: 20%
+    border: none
+    background-color: #0069ff
+    color: white
+    
+.summary
+    clear: both
+    width: 100%
+    height: 25%
+    opacity: 0
+    transition: 0.4s
+    padding: 20px
+    box-sizing: border-box
+
+.chosen_display
+    font-size: 20px
+    font-family: proxima-nova-bold
+    display: inline-block
+    width: 60%
+    vertical-align: top
+    
+.price_wrapper
+    display: inline-block
+    width: 40%
+    font-family: proxima-nova-light
+    
+.price_label
+    font-size: 18px
+    float: left
+    clear: both
+    margin-right: 10px
+    
+.price
+    font-size: 18px
+    text-decoration: line-through
+    font-family: proxima-nova-bold
+    float: left
+    margin-bottom: 20px
+
+.special_price
+    font-size: 18px
+    font-family: proxima-nova-bold
+    float: left
+    
+.currensy
+    font-size: 18px
+    float: left
+    margin-left: 5px
+    font-family: proxima-nova-bold

@@ -27,4 +27,7 @@ router.get('/kontakti', function(req, res, next) {
 router.get('/sotrudnichestvo', function(req, res, next) {
   res.render('collab', { title: 'Express' });
 });
+router.get('/calculator', function(req, res, next) {
+  res.render('calculator', { title: 'Express' });
+});
 module.exports = router;
