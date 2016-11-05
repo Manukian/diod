@@ -598,17 +598,37 @@ body {
   .menu_item--header {
     font-size: 16px; } }
 @media(max-width: 600px) {
+  .header_lg {
+    font-size: 20px;
+    margin: 35px 0 40px; }
+
   .page_header {
     font-size: 30px;
     margin-top: -15px; }
 
   .page_header_transformed {
-    font-size: 15px; }
+    font-size: 15px;
+    -webkit-transform: translateY(-135px);
+    -moz-transform: translateY(-135px);
+    -ms-transform: translateY(-135px);
+    transform: translateY(-135px); }
 
   .left_side, .menu_icon_wrapper, .menu {
     height: 420px; }
 
   .right_side--item .block_caption_centerd {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  .menu_icon {
+    right: 20px;
+    top: 20px; }
+
+  .logo_icon {
+    left: 20px;
+    top: 20px; }
+
+  .calculator {
+    left: 20px;
+    bottom: 20px; } }
 
 /*# sourceMappingURL=layout.css.map */
