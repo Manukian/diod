@@ -1,7 +1,22 @@
 extends layout
 
 block head
+    link(rel="stylesheet", href="/stylesheets/jquery.bxslider.css")
 block left_side
      h1.header_lg На стене
+     ul.bxslider
+         li
+             img(src="../images/ulichnie/nastene/4c389e7769953f2a4ce826f1d346ba4f.JPG", alt="")
+         li
+             img(src="../images/ulichnie/nastene/34fff609ef5dc2e428bc218054d43cc3.jpg", alt="")
+         li
+             img(src="../images/ulichnie/nastene/14767321.jpg", alt="")
+         li
+             img(src="../images/ulichnie/nastene/chapaeva27.jpg", alt="")
+
 block right_side
     h1.header_lg На ножке
+    
+block js
+    script(src="/javascripts/jquery.bxslider.js")
+    script(src="/javascripts/products.js")

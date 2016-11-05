@@ -165,9 +165,8 @@
     margin: 20px 0;
     width: 90%; }
 
-  .steps_wrapper {
-    display: block;
-    margin-top: 20px; } }
+  .step {
+    margin-bottom: 20px; } }
 @media(max-width: 480px) {
   .multiply {
     display: block;

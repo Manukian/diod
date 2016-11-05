@@ -531,6 +531,17 @@ body {
   transform: translateY(-260px);
   font-size: 18px; }
 
+.calculator_sign {
+  display: inline-block;
+  vertical-align: middle;
+  color: white;
+  margin-left: 5px; }
+
+.calculator_svg {
+  width: 45px;
+  vertical-align: middle;
+  transition: 0.3s; }
+
 .calculator {
   position: absolute;
   width: 50px;
@@ -541,12 +552,21 @@ body {
   z-index: 1000;
   cursor: pointer;
   transition: 0.3s;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
   .calculator:hover {
-    background-color: green; }
+    width: 160px;
+    background-color: white; }
+  .calculator:hover path {
+    fill: red; }
+  .calculator:hover circle {
+    fill: red; }
+  .calculator .calculator_sign {
+    color: red; }
 
 .header_lg {
   font-size: 40px;
+  margin: 50px 0 25px;
   font-family: proxima-nova-extra-bold;
   text-align: center; }
 
@@ -586,7 +606,7 @@ body {
     font-size: 15px; }
 
   .left_side, .menu_icon_wrapper, .menu {
-    height: 450px; }
+    height: 420px; }
 
   .right_side--item .block_caption_centerd {
     font-size: 30px; } }
