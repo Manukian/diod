@@ -229,6 +229,8 @@ body
         overflow: visible
     .left_side,.right_side,.right_side--item,.menu_icon_wrapper
         width: 100%
+    .right_side
+        height: 800px
     .sections_wrapper
         width: 100%
     .menu
@@ -242,4 +244,15 @@ body
         opacity: 1
         z-index: 1000
     .menu_item--header
-        font-size: 18px
+        font-size: 16px
+        
+@media(max-width: 600px)
+    .page_header
+        font-size: 30px
+        margin-top: -15px
+    .page_header_transformed
+        font-size: 15px
+    .left_side,.menu_icon_wrapper,.menu
+        height: 450px
+    .right_side--item .block_caption_centerd
+        font-size: 30px

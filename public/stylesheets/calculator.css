@@ -21,7 +21,7 @@
   font-size: 13px;
   padding-left: 25px;
   width: 100%;
-  height: 10%;
+  min-height: 10%;
   box-sizing: border-box; }
 
 .calculator_label {
@@ -63,6 +63,9 @@
 .steps .step {
   display: none; }
 
+.steps_wrapper {
+  display: inline-block; }
+
 .steps .video_available {
   display: inline-block; }
 
@@ -76,7 +79,8 @@
   cursor: pointer; }
 
 .square_selected {
-  border: solid 1px #0069ff; }
+  border: solid 1px #0069ff;
+  color: #0069ff; }
 
 .count {
   display: inline-block;
@@ -159,6 +163,18 @@
 
   .count {
     margin: 20px 0;
-    width: 90%; } }
+    width: 90%; }
+
+  .steps_wrapper {
+    display: block;
+    margin-top: 20px; } }
+@media(max-width: 480px) {
+  .multiply {
+    display: block;
+    margin: 20px 0 20px 100px; }
+
+  .display_height {
+    display: block;
+    margin-left: 15px; } }
 
 /*# sourceMappingURL=calculator.css.map */

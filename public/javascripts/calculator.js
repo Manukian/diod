@@ -53,6 +53,15 @@ $(document).ready(function(){
                return false;
            }
         });
+        $('.size').each(function(){
+            if(!$.isNumeric($(this).val())) {
+                filled = false;
+                $(this).css('border-color','red');
+                $('.summary').css('opacity','0');
+            } else {
+                $(this).css('border-color','#0069ff');
+            }
+        });
         
         var chosen_step = $('.step.square_selected').html();
         var chosen_unit = $('.unit.square_selected').html();
@@ -73,6 +82,8 @@ $(document).ready(function(){
             $('.chosen_display').html(chosen_display);
             $('.price').html(price);
             $('.special_price').html(special_price);           
+        } else {
+            alert('в полях ширина и высота должны быть числа от 0-9');
         }
 
     });
